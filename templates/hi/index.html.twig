@@ -22,4 +22,19 @@
     <br />
     Output:<div data-hello-target="output" type="text"></div>
   </div>
+  <br />
+  <div data-controller="slideshow" data-slideshow-index-value="0">
+    <button data-action="slideshow#previous">←</button>
+    <button data-action="slideshow#next">→</button>
+
+    <div data-slideshow-target="slide">🐵</div>
+    <div data-slideshow-target="slide">🙈</div>
+    <div data-slideshow-target="slide">🙉</div>
+    <div data-slideshow-target="slide">🙊</div>
+  </div>
+  <br />
+  <div data-controller="content-loader" data-content-loader-url-value="{{ url('app_messages') }}">
+  {# <button data-action="content-loader#load">click</button> #}
+  loading...
+  </div>
 {% endblock %}

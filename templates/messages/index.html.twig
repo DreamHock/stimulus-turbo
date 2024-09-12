@@ -1,0 +1,5 @@
+<select>
+    {% for message in messages %}
+        <option value="{{message.id}}">{{message.message}}</option>
+    {% endfor %}
+</select>
